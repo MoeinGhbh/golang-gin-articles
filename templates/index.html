@@ -3,14 +3,14 @@
 <!--Embed the header.html template at this location-->
 {{ template "header.html" .}}
 
-  <!--Loop over the `payload` variable, which is the list of articles-->
+  <!--Loop over the `payload` variable, which is the list of events-->
   {{range .payload }}
-    <!--Create the link for the article based on its ID-->
-    <a href="/article/view/{{.ID}}">
-      <!--Display the title of the article -->
+    <!--Create the link for the event based on its ID-->
+    <a href="/event/view/{{.ID}}">
+      <!--Display the title of the event -->
       <h2>{{.Title}}</h2>
     </a>
-    <!--Display the content of the article-->
+    <!--Display the content of the event-->
     <p>{{.Content}}</p>
   {{end}}
 

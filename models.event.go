@@ -1,5 +1,3 @@
-// models.event.go
-
 package main
 
 import "errors"
